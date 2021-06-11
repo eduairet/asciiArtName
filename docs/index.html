@@ -8,16 +8,32 @@
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="./reset.css">
         <link rel="stylesheet" type="text/css" href="./styles.css">
-        <title>ASCII Art Name Generator</title>
+        <title>ASCII Name Generator</title>
     </head>
     <body>
         <header>
-            <h1>ASCII Art Name Generator</h1>
+            <h1>ASCII Name Generator</h1>
         </header>
         <main>
-            <section>
-                <div class="examples"></div>
-            </section>
+            <div class="main-element">
+                <p>The <strong>Art Name Generator</strong> is a simple program that helps you to have a practical Shell/Python workflow understanding, especially if visual outputs make more sense to you.</p>
+                <p>The repository contains two python interactive files with pseudocode in almost every step so you can understand what's happening, the first file is a dictionary of objects defined by the class <strong>Character,</strong> and the second is the one that runs in the terminal giving a controlled result or a random one using the letterforms defined in the first file.</p>
+            </div>
+            <div class="main-element negative">
+                <h3> Main features of the project</h3>
+                <ul class="feature-list">
+                    <li class="feature">It takes an input string (hopefully your name).
+                    <li class="feature">It asks you if you want a random construction.
+                    <li class="feature">It gives an output with the name stylized with ASCII characters.
+                    <li class="feature">It creates a historic output file that feeds this dedicated website at the <a href="#examples" alt="Go to examples">bottom</a> of this page.
+                </ul>
+            </div>
         </main>
+        <section class="examples-section">
+            <h2 class="section-title">Script Output</h2>
+            <div id="examples" class="code-block"></div>
+        </section>
+        <footer><a href="https://eduairet.com" alt="eat's portfolio" target="blank">Eduardo Aire Torres</a></footer>
+        <script type="text/javascript" src="./script.js"></script>
     </body>
 </html>

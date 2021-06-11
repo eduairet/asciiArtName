@@ -1,21 +1,152 @@
-* {
-    box-sizing: border-box;
-}
-
 html {
     font-family: 'IBM Plex Mono', monospace;
     color: white;
-    background-color: black;
+    background-color: rgba(25, 25, 25, 100);
     text-align: center;
+    box-sizing: border-box;
 }
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
 
 body {
     width: 100%;
-    padding: 2rem;
+}
+
+strong {
+    font-weight: 700;
+}
+
+h1,h2,h3,h4,h5 {
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: left;
+    color: rgba(0, 255, 255, 100);
+    margin-bottom: 2rem;
 }
 
 h1 {
     font-size: 4rem;
-    text-transform: uppercase;
-    font-weight: 700;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p,li {
+    line-height: 2rem;
+    text-align: left;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+ul {
+    list-style-position: outside;
+}
+
+ul li::before {
+    content: "- ";
+    color: yellow; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    width: 1rem;
+    margin-left: -1.8rem;
+}
+
+li {
+    margin-bottom: 0;
+    margin-left: 1.8rem;
+}
+
+a {
+    color: rgba(0, 255, 255, 100);
+}
+
+header {
+    padding: 4rem 4rem 4rem 4rem;
+    width: 100%;
+    background-color: rgb(5, 5, 5);
+}
+
+main {
+    margin: 4rem 4rem 4rem 4rem;
+    display: flex;
+}
+
+.main-element {
+    flex-basis: 50%;
+    padding: 2rem;
+    background-color: rgb(10, 10, 10);
+}
+
+.negative {
+    background-color: rgb(50, 50, 50);
+}
+
+footer {
+    color: white;
+    padding: 4rem 4rem 6rem 4rem;
+    text-align: left;
+    line-height: 1.5rem;
+}
+
+.code-block {
+    padding: 1rem 4rem 4rem 4rem;
+    background-color: rgba(10, 10, 10, 100);
+    overflow-x: scroll;
+    text-align: left;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.code {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1rem;
+    line-height: 1rem;
+    margin: 0;
+}
+
+.examples-section {
+    background-color: rgb(5, 5, 5);
+}
+
+.section-title {
+    padding: 4rem;
+}
+
+@media only screen and (max-width: 800px)  {
+    p, li{
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+    h1 {
+        font-size: 3.5rem;
+    }
+    header {
+        padding: 4rem 4rem 2rem 4rem;
+        width: 100%;
+    }
+    main {
+        flex-direction: column;
+    }
+    .code-block {
+        flex-direction: column;
+    }
+    .code {
+        font-size: .8rem;
+        line-height: .8rem;
+    }
+
+    li {
+        margin-bottom: 0;
+        margin-left: 1.5rem;
+    }
+    
+    ul li::before {
+        margin-left: -1.5rem; /* Also needed for space (tweak if needed) */
+    }
 }

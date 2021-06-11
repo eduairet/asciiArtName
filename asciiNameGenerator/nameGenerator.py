@@ -47,11 +47,11 @@ else:
 currentAsciiWord = asciiNameGenerator(word, randomize)
 # Add the art to an txt file for the blog in the docs directory
 projectPath = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-with open(f'{projectPath}/docs/htmlOutput.txt', 'a', encoding='utf-8') as htmlOutput:
+with open(f'{projectPath}/docs/names.txt', 'a', encoding='utf-8') as htmlOutput:
     htmlOutput.write('<p class="code">\n')
-    htmlOutput.write(currentAsciiWord.replace('\n', '<br/>\n'))
+    htmlOutput.write(currentAsciiWord.replace(' ', '·').replace('\n', '<br/>\n'))
     htmlOutput.write('</p>\n')
 
 # Print the art in the console with a random color
-colors = ['cyan', 'yellow', 'blue', 'magenta', 'grey']
+colors = ['cyan', 'yellow', 'blue', 'magenta']
 print(colored(currentAsciiWord, choice(colors)))

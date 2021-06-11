@@ -1,4 +1,4 @@
-# ASCII Art Name Generator
+# ASCII Name Generator
 
 **Designed and developed by Eduardo Aire**
 
