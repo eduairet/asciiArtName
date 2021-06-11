@@ -17,7 +17,7 @@ Before generating your names make sure to have installed the following modules:
 2. [termcolor](https://pypi.org/project/termcolor/) `pip3 install termcolor`
 3. The files `alphabetDict.py` and `nameGenerator.py` need to be inside the same folder which I've named `asciiNameGenerator` 
 
-I encourage you to download the code, make your own letters and create your own ASCII names, if you don't want to code but you want to use it, you just need to do the following steps:
+I encourage you to download the code, make your letters and create your own ASCII names, if you don't want to code but you want to use it, you just need to do the following steps:
 
 1. Open a terminal in the folder that contains the python files by secondary click or via `cd path/of/directory`:
 
