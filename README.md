@@ -1,6 +1,6 @@
 # ASCII Art Name Generator
 
-**Designed and developed by** Eduardo Aire
+**Designed and developed by Eduardo Aire**
 
 The **ASCII Art Name Generator** is a simple program that helps you to have a practical Shell/Python workflow understanding, especially if visual outputs make more sense to you. The repository contains two python interactive files with pseudocode in almost every step so you can understand what's happening, the first file is a dictionary of objects defined by the class **Character**, and the second is the one that runs in the terminal giving a controlled result or a random one using the letterforms defined in the first file. The main features of the project are the following ones:
 
@@ -17,7 +17,7 @@ Before generating your names make sure to have installed the following modules:
 2. [termcolor](https://pypi.org/project/termcolor/) `pip3 install termcolor`
 3. The files `alphabetDict.py` and `nameGenerator.py` need to be inside the same folder which I've named `asciiNameGenerator` 
 
-I encourage you to download the code, make your own letters and create your own ASCII names, if you don't want to code but you want to use it, you just need to do the following steps:
+I encourage you to download the code, make your letters and create your own ASCII names, if you don't want to code but you want to use it, you just need to do the following steps:
 
 1. Open a terminal in the folder that contains the python files by secondary click or via `cd path/of/directory`:
 
