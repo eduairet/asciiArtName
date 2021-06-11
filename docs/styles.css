@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'IBM Plex Mono', monospace;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+body {
+    width: 100%;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
