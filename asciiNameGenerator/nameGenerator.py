@@ -50,8 +50,8 @@ projectPath = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 with open(f'{projectPath}/docs/htmlOutput.txt', 'a', encoding='utf-8') as htmlOutput:
     htmlOutput.write('<p class="code">\n')
     htmlOutput.write(currentAsciiWord.replace('\n', '<br/>\n'))
-    htmlOutput.write('</p>')
+    htmlOutput.write('</p>\n')
 
 # Print the art in the console with a random color
-colors = ['cyan', 'yellow', 'blue']
+colors = ['cyan', 'yellow', 'blue', 'magenta', 'grey']
 print(colored(currentAsciiWord, choice(colors)))
