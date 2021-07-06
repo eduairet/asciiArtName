@@ -29,4 +29,6 @@ I encourage you to download the code, make your letters and create your own ASCI
 
 3. And follow the instructions
 
+4. If you are using a venv make sure to activate the environment before running the script using `source ./bin/activate` from your project's path 
+
 If you have any inquiries or requests feel free to contact me at (hola@eduairet.com)
