@@ -11,7 +11,7 @@ The **ASCII Art Name Generator** is a simple program that helps you to have a pr
 
 ![Shell program preview](/docs/ims/shellinterface.png)
 
-Before generating your names make sure to have installed the following modules:
+Before generating your names make sure to have installed the following modules (my advice is to [create a venv](https://docs.python.org/3/library/venv.html) for the project):
 
 1. [Unidecode](https://pypi.org/project/Unidecode/) `pip3 install Unidecode`
 2. [termcolor](https://pypi.org/project/termcolor/) `pip3 install termcolor`
