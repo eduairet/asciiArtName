@@ -16,6 +16,7 @@ body {
 
 strong {
     font-weight: 700;
+    color: fuchsia;
 }
 
 h1,h2,h3,h4,h5 {
@@ -28,6 +29,7 @@ h1,h2,h3,h4,h5 {
 
 h1 {
     font-size: 4rem;
+    text-align: center;
 }
 
 h2 {
@@ -57,13 +59,30 @@ ul li::before {
     margin-left: -1.8rem;
 }
 
+ol {
+    list-style-position: outside;
+    counter-reset: li;
+}
+
+ol li::before{
+    content: counter(li); color: yellow;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1.5em;
+    margin-right: 0.5em;
+    text-align: right;
+    direction: rtl
+}
+
 li {
     margin-bottom: 0;
     margin-left: 1.8rem;
+    counter-increment: li
 }
 
 a {
     color: rgba(0, 255, 255, 100);
+    cursor: pointer;
 }
 
 header {
@@ -72,19 +91,26 @@ header {
     background-color: rgb(5, 5, 5);
 }
 
-main {
+.main-block {
     margin: 4rem 4rem 4rem 4rem;
     display: flex;
 }
 
 .main-element {
-    flex-basis: 50%;
+    flex-basis: 100%;
     padding: 2rem;
     background-color: rgb(10, 10, 10);
 }
 
 .negative {
     background-color: rgb(50, 50, 50);
+}
+
+.full-width {
+    width: 100%;
+    max-width: calc(1364px*.8);
+    min-width: calc(1364px*.5);
+    height: 100%;
 }
 
 footer {
@@ -110,12 +136,26 @@ footer {
     margin: 0;
 }
 
+.code-static {
+    color: coral;
+}
+
 .examples-section {
     background-color: rgb(5, 5, 5);
 }
 
 .section-title {
     padding: 4rem;
+}
+
+.close {
+    width: 100%;
+    padding: 4rem;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    border-top: magenta solid 2px;
+    border-bottom: magenta solid 2px;
 }
 
 @media only screen and (max-width: 800px)  {
@@ -130,7 +170,7 @@ footer {
         padding: 4rem 4rem 2rem 4rem;
         width: 100%;
     }
-    main {
+    .main-block  {
         flex-direction: column;
     }
     .code-block {

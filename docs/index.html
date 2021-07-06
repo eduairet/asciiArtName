@@ -15,19 +15,44 @@
             <h1>ASCII Name Generator</h1>
         </header>
         <main>
-            <div class="main-element">
-                <p>The <strong>Art Name Generator</strong> is a simple program that helps you to have a practical Shell/Python workflow understanding, especially if visual outputs make more sense to you.</p>
-                <p>The repository contains two python interactive files with pseudocode in almost every step so you can understand what's happening, the first file is a dictionary of objects defined by the class <strong>Character,</strong> and the second is the one that runs in the terminal giving a controlled result or a random one using the letterforms defined in the first file.</p>
+            <div class="main-block">
+                <div class="main-element">
+                    <h3>About</h3>
+                    <p>The <strong>Art Name Generator</strong> is a simple program that helps you to have a practical Shell/Python workflow understanding, especially if visual outputs make more sense to you.</p>
+                    <p>The <a href="https://github.com/eduairet/asciiArtName" alt="Link to repository" target="blank">repository</a> contains two python interactive files with pseudocode in almost every step so you can understand what's happening, the first file is a dictionary of objects defined by the class <strong>Character,</strong> and the second is the one that runs in the terminal giving a controlled result or a random one using the letterforms defined in the first file.</p>
+                </div>
+                <div class="main-element negative">
+                    <h3>Main features of the project</h3>
+                    <ul class="feature-list">
+                        <li class="feature">It takes an input string (your name is a good shoot)
+                        <li class="feature">It asks you if you want a random construction
+                        <li class="feature">It gives an output with the name stylized with ASCII characters
+                        <li class="feature">It creates a historic output file that feeds this dedicated website at the <a href="#examples" alt="Go to examples">bottom</a> of this page
+                    </ul>
+                </div>
             </div>
-            <div class="main-element negative">
-                <h3> Main features of the project</h3>
-                <ul class="feature-list">
-                    <li class="feature">It takes an input string (hopefully your name).
-                    <li class="feature">It asks you if you want a random construction.
-                    <li class="feature">It gives an output with the name stylized with ASCII characters.
-                    <li class="feature">It creates a historic output file that feeds this dedicated website at the <a href="#examples" alt="Go to examples">bottom</a> of this page.
-                </ul>
+            <div class="main-block">
+                <div class="main-element">
+                    <h3>Requirements</h3>
+                    <p>Before generating your names make sure to have <strong>installed the following modules</strong> (my advice is to create a <a href="https://docs.python.org/3/library/venv.html" alt="Create venv" target="blank">venv</a> for the project):</p>
+                    <ul class="feature-list">
+                        <li class="feature"><a href="https://pypi.org/project/Unidecode/" alt="Unidecode module" target="blank">Unidecode</a> <span class="code-static">pip install Unidecode</span>
+                        <li class="feature"><a href="https://pypi.org/project/termcolor/" alt="termcolor module" target="blank">termcolor</a> <span class="code-static">pip install termcolor</span>
+                        <li class="feature">The files <span class="code-static">alphabetDict.py</span> and <span class="code-static">nameGenerator.py</span> need to be inside the same folder which I've named asciiNameGenerator
+                    </ul>
+                </div>
+                <div class="main-element negative">
+                    <h3>Use it!</h3>
+                    <p>I encourage you to download the code, make your letters and <strong>your own ASCII names,</strong> if you don't want to code but you want to use it, you just need to do the following steps:</p>
+                    <ol class="feature-list">
+                        <li class="feature">Open a terminal in the folder that contains the python files by secondary click or via <span class="code-static">cd path/of/directory</span>
+                        <li class="feature">Write the command <span class="code-static">python3 nameGenerator.py</span> and follow the instructions
+                        <li class="feature">If you are using a venv make sure to activate the environment before running the script using <span class="code-static">./bin/activate</span> from your project's path
+                    </ol>
+                </div>
             </div>
+            <img class="full-width" src="./ims/run.png" alt="Running window"/>
+            <p class="close">If you have any inquiries or requests feel free to contact me at <a href="mailto:hola@eduairet.com" alt="Contact email">hola@eduairet.com</a></p>
         </main>
         <section class="examples-section">
             <h2 class="section-title">Script Output</h2>
