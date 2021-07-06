@@ -4,7 +4,7 @@
 
 The **ASCII Art Name Generator** is a simple program that helps you to have a practical Shell/Python workflow understanding, especially if visual outputs make more sense to you. The repository contains two python interactive files with pseudocode in almost every step so you can understand what's happening, the first file is a dictionary of objects defined by the class **Character**, and the second is the one that runs in the terminal giving a controlled result or a random one using the letterforms defined in the first file. The main features of the project are the following ones:
 
-1. It takes an input string (hopefully your name)
+1. It takes an input string (your name is a good shoot)
 2. It asks you if you want a random construction
 3. It gives an output with the name stylized with ASCII characters
 4. It creates a historic output file that feeds the repository dedicated website at https://eduairet.github.io/asciiArtName/
